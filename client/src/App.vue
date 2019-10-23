@@ -1,7 +1,11 @@
 <template lang="html">
   <div class="main-container">
     <h1>CRT Hotel Check-in System</h1>
-<h4>Hotel of The Year winner 1983, 1984 and 1986</h4>
+
+    <div class="hotel-award">
+      <h4>Hotel of The Year Winner 1983, 1984 and 1986</h4>
+    </div>
+
     <div class="guest-form-div">
       <guests-form id="guest-form"/>
     </div>
@@ -78,8 +82,15 @@ div.guest-form-div {
   padding: 10px;
   border: 3px limeGreen dashed;
   justify-content: center;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+div.hotel-award{
+  background-color: limeGreen;
+  color: #252525;
+  padding: 0 2%;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 h2 {
   font-size: 1.5em;
@@ -97,6 +108,7 @@ div#guest {
 div.guest-name, .guest-email,  {
   display: flex;
   width: 40%;
+  justify-content: space-between;
 }
 
 div.guest-delete-button {

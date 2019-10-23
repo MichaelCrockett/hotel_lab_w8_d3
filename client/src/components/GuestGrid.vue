@@ -7,16 +7,16 @@
       <div class="guest-email">
         <h3>{{ guest.email }}</h3>
       </div>
-<div>
-  <h4>Checked in? {{ guest.isCheckedIn }}</h4>
-</div>
+      <div>
+        <h4>Checked in? {{ guest.isCheckedIn }}</h4>
+      </div>
       <div class="guest-delete-button">
         <button v-on:click="deleteBooking(guest._id)">Delete booking</button>
       </div>
-      </span>
-    </div>
-
+    </span>
   </div>
+
+</div>
 
 </template>
 
@@ -40,4 +40,8 @@ export default {
 
 
 <style lang="css" scoped>
+div#guestsGrid {
+  display: flex;
+  justify-content: space-between;
+}
 </style>
