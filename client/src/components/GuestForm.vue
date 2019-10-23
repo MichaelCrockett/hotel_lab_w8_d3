@@ -5,7 +5,7 @@
     <label for="email">Guest Email: </label>
     <input v-model="email" type="text" id="email" required>
     <!-- <input type="hidden" v-model="isCheckedIn" value=false> -->
-    <input type="submit" value="save" id="save">
+    <input type="submit" value="save" id="save" class="guest-save-button">
   </form>
 </template>
 
@@ -38,5 +38,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style>
+.guest-save-button {
+margin-left: 10px;
+}
+
 </style>

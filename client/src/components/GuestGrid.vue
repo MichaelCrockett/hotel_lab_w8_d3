@@ -1,9 +1,19 @@
 <template lang="html">
   <div id="guestsGrid">
     <div id="guest" v-for="guest in guests">
-      <h2>{{ guest.name }}</h2>
-      <h3>{{ guest.email }}</h3>
-      <button v-on:click="deleteBooking(guest._id)">Delete booking</button>
+      <div id="guest-name">
+        <h2>{{ guest.name }}</h2>
+      </div>
+      <div class="guest-email">
+        <h3>{{ guest.email }}</h3>
+      </div>
+<div>
+  <h4>Checked in? {{ guest.isCheckedIn }}</h4>
+</div>
+      <div class="guest-delete-button">
+        <button v-on:click="deleteBooking(guest._id)">Delete booking</button>
+      </div>
+      </span>
     </div>
 
   </div>
