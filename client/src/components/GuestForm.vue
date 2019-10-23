@@ -1,9 +1,9 @@
 <template lang="html">
   <form v-on:submit="saveNewGuest" id="guestsForm">
     <label for="name">Guest Name: </label>
-    <input v-model="name" type="text" id="name">
+    <input v-model="name" type="text" id="name" required>
     <label for="email">Guest Email: </label>
-    <input v-model="email" type="text" id="email">
+    <input v-model="email" type="text" id="email" required>
     <!-- <input type="hidden" v-model="isCheckedIn" value=false> -->
     <input type="submit" value="save" id="save">
   </form>
